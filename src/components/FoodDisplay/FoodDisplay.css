@@ -1,0 +1,36 @@
+.food-display{
+    margin-top: 30px;
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+.food-display-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.no-items-message {
+    color: #d9534f;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.no-items-image {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+

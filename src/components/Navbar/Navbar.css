@@ -1,0 +1,187 @@
+.logo{
+    border-radius: 20%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;     
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080116;
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 20px;
+
+  }
+  .navbar-right{
+    margin-right: 20px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFFCF7;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li:hover {
+    color: #FFD166;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .navbar-search-icon {
+    position: relative;
+  }
+  .navbar-search-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .search-icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  
+  .dot {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF4848;
+  }
+  
+  .navbar-right button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Vertical and horizontal padding */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-right button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+.navbar-right button:focus {
+    outline: none; /* Remove default outline */
+}
+
+  button:hover {
+    background-color: #55712E; 
+  }
+/* navbar underline */
+.navbar li {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 8px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar li.active {
+    color: #ffa500; 
+  }
+  
+  .navbar li.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: #ffa500;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .navbar li.active:hover::after {
+    width: 100%;
+  }
+  
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5rem 1rem;
+  }
+
+  .navbar-menu {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      width: 100%;
+      background-color: #080116; /* Match the navbar background */
+      position: absolute;
+      top: 60px; /* Adjust depending on the height of your navbar */
+      left: 0;
+      z-index: 1000;
+      padding: 1rem;
+  }
+
+  .navbar-menu.active {
+      display: flex; /* Show the menu when active */
+  }
+
+  .navbar-menu li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add separation */
+  }
+
+  .navbar-toggle {
+      display: block; /* Show toggle button */
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      margin-left: auto; /* Align to the right */
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .navbar-menu {
+      display: flex; /* Show the menu normally */
+  }
+
+  .navbar-toggle {
+      display: none; /* Hide toggle button on desktop */
+  }
+}
+
+
+.hi{
+  color:black ;
+}
+
+

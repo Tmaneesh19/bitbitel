@@ -1,0 +1,115 @@
+.place-order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 100px 0px;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C5C5C5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+.place-order-left .multi-field{
+    display: flex;
+    gap: 10px;
+}
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+.payment-options{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.payment-option{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid tomato;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.payment-options button{
+    border: none;
+    background-color: tomato;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    .place-order{
+        flex-direction: column;
+    }
+}
+/* CSS for "PLACE ORDER" button */
+button {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 46%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e52e71, #ff8a00);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+}
+
+/* CSS for success message */
+.order-success-message {
+    font-size: 1.5rem;
+    color: transparent;
+    background: linear-gradient(135deg, #32ccbc, #90f7ec);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: popIn 0.6s ease-out;
+    margin-top: 20px;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
